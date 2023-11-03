@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Family restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://th.bing.com/th/id/OIP.YiEcLP9gJFhDS8vq1lZnCwHaEK?w=318&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p style="font-family:timesnewroman"><b>Family Restaurant</b><br><br></p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p style="font-family:timesnewroman"><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black"><b>Menu</b></button>
+    <button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black"><b>Contact</b></button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p style="font-family:timesnewroman" class="w3-xlarge"><b>Working Hours:</b>All working days 9am-11pm|</p>
+    <dl style="font-family:timesnewroman" class="w3-large"><dt><b>Address:</b></dt><dd>No.13,<br>Bussy street,<br>Puducherry</dd></dl>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>All Time Favourite</h1>
+    </div>
+    <div class="w3-container">
+      <h5>French Fries	<b>106/-</b><br>
+	Chilli Cheese Toast <b>115/-</b><br>
+	Chilli Cheese Gralic Toast <b >115/-</b><br>
+	Garlic Bread<b>98/-</b><br>
+	Garlic Bread with Cheese<b>119/-</b><br></h5>   
+    </div>
+<div class ="w3-container w3-black">
+	<h1>Sandwich</h1>
+</div>
+<div class="w3-container">
+	<h5>Plain Sandwich	<b>175/-</b><br>
+	Grilled Sandwich	<b>175/-</b><br>
+	Club Sandwich	<b>175/-</b>
+	</h5>
+</div>
+
+ <div class="w3-container w3-black">
+      <h1>Salads</h1>
+    </div>
+ <div class="w3-container">
+      <h5>Russian Salad / Maccroni<b>119/-</b></h5>
+</div>
+
+ <div class="w3-container w3-black">
+      <h1>Burgers</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Veg. Burger	<b>72/-</b></h5>
+</div>
+
+ <div class="w3-container w3-black">
+      <h1>Rice / Pulao / Biryanis / Raitas</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Steam Rice	<b>161/-</b><br>
+Soya Dum Biryani 	<b>220/-</b><br>
+Veg. Pulao	<b>161/-</b><br>
+Mix Veg. Pulao	<b>161/-</b><br>
+Jeera Pulao	<b>161/-</b><br>
+Matka Biryani With Raita 	<b>220/-</b></br>
+Hyderabadi Biryani 	<b>220/-</b><br>
+Plain Raita	<b>102/-</b></br>
+Boondi Raita	<b>102/-</b><br>
+Mix. Veg. Raita	<b>102/-</b><br>
+Jeera Raita	<b>102/-</b><br>
+Pineapple Raita	<b>02/-</b>
+
+</div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Salad <b>250/-</b></h5>
+      <h5>Ice cream <b>150/-</b></h5>
+      <h5>Chocolate Cake <b>399/-</b></h5>
+      <h5>Cheese <b>550/-</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="message.html">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="date and time" required name="date" ></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
